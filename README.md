@@ -1,41 +1,51 @@
-# gland-msconnet
-Gland-MSConNet: A semantic segmentation Model for Cotton Leaf Pigment Gland Detection and Phenotypic Quantification
+# Gland-MSConNet
+**Gland-MSConNet: A semantic segmentation Model for Cotton Leaf Pigment Gland Detection and Phenotypic Quantification**
+
+
 ![Figure_2](https://github.com/user-attachments/assets/3ffdbf2d-8929-4c83-8cbf-1a7746d952fa)
 
-Getting Started
 
-1.Installation:
-Before running the code, ensure you have the following dependencies installed:
-pip install -r requirements.txt
+# Getting Started
+## Installation
+Before running the code, ensure you have all required dependencies installed. You can install them using the following command:
 
-2.Data Preparation:
-The dataset is available here:https://pan.baidu.com/s/1-a8_EDrq0sIySpnlFbvAlg?pwd=luck (extraction code: luck).
+`pip install -r requirements.txt`
 
-3.Data Format:
-Input: RGB image (e.g., 256×256 resolution).
-Output: Binary segmentation mask (grayscale).
+## Data Preparation
+The dataset used in this study is available for download at the following link:https://pan.baidu.com/s/1-a8_EDrq0sIySpnlFbvAlg?pwd=luck (extraction code: luck).
 
-4.Training:
-To train a model, run train.py.
+##  Data Format
+Input: RGB images ( 256×256 resolution).
+Output: Binary segmentation masks (grayscale).
 
-5.Evaluation:
-To validate the model, run get_miou.py. 
+## Training
+To train the model, run the following command:
 
-6.Comparison Models:
-For benchmarking, we compare Gland-MSConNet with the following models:
+ `python train.py`
 
-  unet：https://github.com/bubbliiiing/unet-pytorch
+## Evaluation
+To validate the model's performance, run:
+
+ `python get_miou.py`
+
+## Comparison Models
+For benchmarking, Gland-MSConNet is compared with the following state-of-the-art segmentation models:
+
+
+  Unet：https://github.com/bubbliiiing/unet-pytorch
   
-  deeplabv3+：https://github.com/bubbliiiing/deeplabv3-plus-pytorch
+  Deeplabv3+：https://github.com/bubbliiiing/deeplabv3-plus-pytorch
   
-  pspnet：https://github.com/bubbliiiing/pspnet-pytorch
+  PSPnet：https://github.com/bubbliiiing/pspnet-pytorch
   
-  transunet：https://github.com/Beckschen/TransUNet
-  
-These repositories provide the official implementations of the baseline models used for comparison.
+  Transunet：https://github.com/Beckschen/TransUNet
 
-7.Open Source:
-A few files in this repository are modified from the following open-source implementations:
+These repositories provide official implementations of the baseline models used for comparison.
+
+## Open Source Contributions
+Some files in this repository have been adapted from the following open-source implementation:
+
 https://github.com/bubbliiiing/unet-tf2
 
-For more details, please refer to our paper. 
+For further details, please refer to our paper. 
+
