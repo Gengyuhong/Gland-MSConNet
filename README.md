@@ -32,6 +32,10 @@ To validate the model's performance, run:
  ```python
  python get_miou.py
 ```
+The weights file is located in the model's “logs” folder:
+```
+last_epoch_weights.h5
+```
 
 ## Comparison Models
 For benchmarking, Gland-MSConNet is compared with the following state-of-the-art segmentation models:
