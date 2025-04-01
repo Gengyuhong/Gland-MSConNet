@@ -9,43 +9,48 @@
 ## Installation
 Before running the code, ensure you have all required dependencies installed. You can install them using the following command:
 
-`pip install -r requirements.txt`
+```
+pip install -r requirements.txt
+```
 
 ## Data Preparation
-The dataset used in this study is available for download at the following link:https://pan.baidu.com/s/1-a8_EDrq0sIySpnlFbvAlg?pwd=luck (extraction code: luck).
+The dataset used in this study is available for download at the following link:https://pan.baidu.com/s/1-a8_EDrq0sIySpnlFbvAlg?pwd=luck (extraction code: luck)
 
-##  Data Format
-Input: RGB images ( 256×256 resolution).
-Output: Binary segmentation masks (grayscale).
 
 ## Training
 To train the model, run the following command:
 
- `python train.py`
+ ```python
+ python train.py
+```
 
 ## Evaluation
 To validate the model's performance, run:
 
- `python get_miou.py`
+ ```python
+ python get_miou.py
+```
 
 ## Comparison Models
 For benchmarking, Gland-MSConNet is compared with the following state-of-the-art segmentation models:
 
 
-  Unet：https://github.com/bubbliiiing/unet-pytorch
+  **[Unet](https://github.com/bubbliiiing/unet-pytorch)**
   
-  Deeplabv3+：https://github.com/bubbliiiing/deeplabv3-plus-pytorch
+  **[Deeplabv3+](https://github.com/bubbliiiing/deeplabv3-plus-pytorch)**
   
-  PSPnet：https://github.com/bubbliiiing/pspnet-pytorch
+ **[PSPnet](https://github.com/bubbliiiing/pspnet-pytorch)**
   
-  Transunet：https://github.com/Beckschen/TransUNet
+  **[Transunet](https://github.com/Beckschen/TransUNet)**
 
 These repositories provide official implementations of the baseline models used for comparison.
 
 ## Open Source Contributions
 Some files in this repository have been adapted from the following open-source implementation:
 
+```
 https://github.com/bubbliiiing/unet-tf2
+```
 
 For further details, please refer to our paper. 
 
